@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+    background: #d2d5de;
+    font-size: 16px;
+}
+
+
+.area-entrada{
+    width: 400px;
+    height: 944px;
+}
+
+.area-entrada textarea{
+    font-size: 1.5em;
+    color: #0A3871;
+    border: none;    
+    background: #d2d5de;
+}
+
+.area-salida{
+    width: 400px;
+    height: 944px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.area-salida h2{
+    width: 336px;
+    height: 58px;
+    font-size: 1.5em;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.area-salida h3{
+    width: 336px;
+    height: 48px;
+    font-size: 1em;
+    line-height: 150%;
+    color: #495057;   
+}
+
+.area-salida img{
+    width: 336px;
+    height: 304px;
+}
+
+.botones input[type="button"]{
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.botones p > img{
+    padding-right: 10px;
+}
+
+#btn-encriptar{
+    background: #0A3871;
+    color: white;
+}
+
+#btn-desencriptar{
+    background:#D8DFE8;
+}
