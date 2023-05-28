@@ -13,24 +13,34 @@
 <body>
     <div class="wrapper">
         <div class="icon">
-            <img src="assets/img/logo.png" alt="" srcset="">
+            <div class="container">
+                <img src="assets/img/logo.png" alt="Logo Alura" srcset="">
+            </div>
         </div>
     
         <div class="area-entrada">
-            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            <textarea name="texto" id="texto" cols="30" rows="10">Ingrese texto aqui</textarea>
+        </div>
+
+        <div class="botones">
+            <div class="items">
+                <p><img src="assets/img/exclamacion.png" alt="" srcset="">Solo letras minúsculas y sin acentos</p>
+                <input id="btn-encriptar" type="button" value="Encriptar">
+                <input id="btn-desencriptar" type="button" value="Desencriptar">
+            </div>
         </div>
     
         <div class="area-salida">
-            <img src="/assets/img/Muneco.png" alt="">
-            <h2>Ningún mensaje fue encontrado</h3>
-            <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+            <div class="items">
+                <div class="container-img">
+                    <img src="/assets/img/Muneco.png" alt="">
+                </div>
+                <h2>Ningún mensaje fue <br class="salto">encontrado<br></h3>
+                <h3>Ingresa el texto que desees <br class="salto">encriptar o desencriptar.</h3>
+            </div>
         </div>
     
-        <div class="botones">
-            <p><img src="assets/img/exclamacion.png" alt="" srcset="">Solo letras minúsculas y sin acentos</p>
-            <input id="btn-encriptar" type="button" value="Encriptar">
-            <input id="btn-desencriptar" type="button" value="Desencriptar">
-        </div>
+        
 
     </div>
 </body>
