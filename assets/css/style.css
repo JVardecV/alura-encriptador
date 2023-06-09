@@ -16,16 +16,23 @@
     .wrapper{
         width: 100%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .icon{
         width: 100vw;
+        order: 1;
     }
 
     .icon .container{
         display: flex;
         margin-top: 15px;
         margin-left: 15px;
+    }
+
+    .area-entrada{
+        order: 2;
     }
 
     .area-entrada , .area-entrada textarea{
@@ -36,6 +43,7 @@
         margin-right: 10px;
         border: none;
         font-size: 1.3em;
+        
     }
 
     .area-entrada{
@@ -45,6 +53,7 @@
 
     .botones{
         width: calc(100% - 10px);
+        order: 3;
     }
 
     .botones p{
@@ -85,18 +94,20 @@
         margin-top: 10%;
         margin-bottom: 10%;
         width: 100vw;
-        height: 30%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         align-content: center;
+        order: 4;
+        
     }
 
     .area-salida .items{
         width: 90vw;
-        height: 40vh;
+        height: 45vh;
         background: #FFFFFF;
         border-radius: 20px;
     }
@@ -115,6 +126,24 @@
         padding-top: 10%;
         color: gray;
         font-size: 1.0em;
+    }
+
+    #mensaje-salida{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mensaje-encriptado{
+        border: none;
+    }
+    
+    #btn-copiar{
+        margin: auto;
+        width: 279px;
+        height: 67px;
+        border-radius: 24px;
+        color: #0A3871;
+        background: #ffffff;
     }
 
 
