@@ -102,10 +102,14 @@ function desencriptar(){
 function copiarTexto(){
 
     //Captura de texto en la zona de salida
-    var textoSalida = document.getElementById('mensaje-encriptado').value;
+    var textoSalida = document.getElementById('mensaje-encriptado');
+
+    //Seleccionar el campo de texto
+    textoSalida.select();
+    textoSalida.setSelectionRange(0, 99999); // For mobile devices
 
     //Copia el texto que esta al interior del textarea de salida
-    navigator.clipboard.writeText(textoSalida);
+    navigator.clipboard.writeText(textoSalida.value);
 
     alert('¡Texto Copiado!');
 
