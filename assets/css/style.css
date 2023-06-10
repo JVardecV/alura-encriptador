@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (max-width: 380px){
+@media screen and (max-width: 600px){
     *{
         margin: 0px;
         padding: 0px;
@@ -152,7 +152,7 @@
 
 /* Tablet */
 
-@media screen and (max-width: 1025px) and (min-width: 382px){
+@media screen and (min-width: 600px){
     *{
         margin: 0px;
         padding: 0px;
@@ -522,7 +522,7 @@
 
 /* Desktop V2*/
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 992px){
     *{
         margin: 0px;
         padding: 0px;
