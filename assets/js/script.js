@@ -1,6 +1,7 @@
 //Bloque de captura de botones
 var btnEncriptar = document.getElementById('btn-encriptar');
 var btnDesencriptar = document.getElementById('btn-desencriptar');
+var btnCopiar = document.getElementById('btn-copiar');
 
 //Opcion por defecto para ocultar mensaje
 document.getElementById('mensaje-salida').style.display = 'none';
@@ -12,6 +13,8 @@ document.getElementById('btn-copiar').style.display = 'none';
 //una acción
 btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
+btnCopiar.addEventListener('click', copiarTexto);
+
 
 
 
@@ -49,6 +52,8 @@ function encriptar(){
     document.getElementById('btn-copiar').style.display = 'block';
 
     document.querySelector('#texto-entrada').value = "";
+
+    
 
 
 
@@ -88,4 +93,20 @@ function desencriptar(){
     document.getElementById('btn-copiar').style.display = 'block';
 
     document.querySelector('#texto-entrada').value = "";
+
+    
+
+}
+
+
+function copiarTexto(){
+
+    //Captura de texto en la zona de salida
+    var textoSalida = document.getElementById('mensaje-encriptado').value;
+
+    //Copia el texto que esta al interior del textarea de salida
+    navigator.clipboard.writeText(textoSalida);
+
+    alert('¡Texto Copiado!');
+
 }
